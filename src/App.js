@@ -1,5 +1,6 @@
 import imgHeaderDesktop from './images/image-header-desktop.jpg';
 import imgHeaderMobile from './images/image-header-mobile.jpg';
+import CountUp from 'react-countup';
 
 function App() {
   return (
@@ -19,25 +20,27 @@ function App() {
             regarding revenue, customer experience, and overall efficiency.
           </p>
           <div className="grow flex flex-col sm:flex-row items-center sm:items-end justify-between space-y-8">
-            <div>
+            <div className="w-20">
               <p className="text-white text-center sm:text-left text-2xl font-bold font-inter pb-2">
-                10k+
+                <CountUp end={10} duration={2} />
+                k+
               </p>
               <p className="uppercase text-xs text-center sm:text-left text-white-stat-headings">
                 companies
               </p>
             </div>
-            <div>
+            <div className="w-20">
               <p className="text-white text-center sm:text-left text-2xl font-bold font-inter pb-2">
-                314
+                <CountUp end={314} duration={2} />
               </p>
               <p className="uppercase text-xs text-center sm:text-left text-white-stat-headings">
                 templates
               </p>
             </div>
-            <div>
+            <div className="w-20">
               <p className="text-white text-center sm:text-left text-2xl font-bold font-inter pb-2">
-                12M+
+                <CountUp end={12} duration={2} />
+                M+
               </p>
               <p className="uppercase text-xs text-center sm:text-left text-white-stat-headings">
                 queries
